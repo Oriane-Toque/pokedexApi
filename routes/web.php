@@ -13,6 +13,20 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
-});
+//**? ROUTE HOME (liste tous les pokemons) ?**/
+$router->get(
+    '/',
+    [
+      'uses' => 'MainController@pokemonList',
+      'as'   => 'home'
+    ]
+);
+
+//**? ROUTE POKEMON DETAIL (caractéristiques d'un pokemon) ?**/
+$router->get(
+    '/pokemon/{id}',
+    [
+        'uses' => 'PokemonController@pokemonDetail',
+        'as' => 'pokemon.detail'
+    ]
+);

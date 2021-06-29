@@ -27,6 +27,6 @@ $router->get(
     '/pokemon/{id}',
     [
         'uses' => 'PokemonController@pokemonDetail',
-        'as' => 'pokemon.detail'
+        'as' => 'pokemon'
     ]
 );

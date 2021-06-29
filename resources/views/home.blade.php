@@ -1,15 +1,13 @@
 @extends('template.master')
 
-
 @section('content')
 
   <section class="pokemonList">
 
-    @foreach($pokemonsList as $pokemonId => $pokemonItem)
+    @foreach($pokemonList as $pokemonId => $pokemonItem)
     <div class="pokemonList_pokemon">
-      <a href=" {{ @route("pokemon.detail", ["id" => $pokemonId ]) }}">
-        <img src="{{ $pokemonItem->sprites->front_default }}" alt="{{ $pokemonItem->name }}">
-        <p><span>#{{ $pokemonId }}</span> {{ $pokemonItem->name }}</p>
+      <a href="{{ @route("pokemon", ["id" => $pokemonId + 1 ]) }}">
+        <p><span>#{{ $pokemonId + 1 }}</span> {{ $pokemonItem->name }}</p>
       </a>
     </div>
     @endforeach

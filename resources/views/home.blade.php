@@ -2,12 +2,14 @@
 
 @section('content')
 
+  <h2>Liste de tous les pokemons</h2>
+
   <section class="pokemonList">
 
     @foreach($pokemonList as $pokemonId => $pokemonItem)
     <div class="pokemonList_pokemon">
       <a href="{{ @route("pokemon", ["id" => $pokemonId + 1 ]) }}">
-        <p><span>#{{ $pokemonId + 1 }}</span> {{ $pokemonItem->name }}</p>
+        <h2><span>#{{ $pokemonId + 1 }}</span> {{ $pokemonItem->name }}</h2>
       </a>
     </div>
     @endforeach

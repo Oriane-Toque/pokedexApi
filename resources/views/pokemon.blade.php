@@ -1,6 +1,5 @@
 @extends('template.master')
 
-@dump($pokemonStats[0]->base_stat)
 
 @section('content')
 

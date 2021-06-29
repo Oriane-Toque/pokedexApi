@@ -27,6 +27,94 @@ body {
 }
 
 /* ========================================================================== */
+/* ============================CLASS TYPE COLORS============================= */
+/* ========================================================================== */
+
+.pokemonType span {
+    text-transform: uppercase;
+}
+
+.normal {
+    background-color: #4d4d4def;
+}
+
+.fighting {
+    background-color: rgb(158, 0, 0);
+}
+
+.flying {
+    background-color: rgb(51, 12, 156);
+}
+
+.poison {
+    background-color: rgb(65, 0, 95);
+}
+
+.ground {
+    background-color: rgb(114, 51, 0);
+}
+
+.rock {
+    background-color: rgb(255, 0, 170);
+}
+
+.bug {
+    background-color: rgb(17, 17, 17);
+}
+
+.ghost {
+    background-color: rgb(33, 102, 102);
+}
+
+.steel {
+    background-color: rgb(29, 29, 29);
+}
+
+.fire {
+    background-color: rgb(156, 36, 0);
+}
+
+.water {
+    background-color: rgb(0, 197, 197);
+}
+
+.grass {
+    background-color: rgb(55, 151, 0);
+}
+
+.electric {
+    background-color: rgb(224, 202, 0);
+}
+
+.psychic {
+    background-color: rgb(163, 0, 68);
+}
+
+.ice {
+    background-color: aqua;
+}
+
+.dragon {
+    background-color: rgb(172, 24, 24);
+}
+
+.dark {
+    background-color: rgb(0, 0, 0);
+}
+
+.fairy {
+    background-color: rgb(0, 255, 98);
+}
+
+.unknow {
+    background-color: rgb(41, 41, 41);
+}
+
+.shadow {
+    background-color: rgb(44, 20, 20);
+}
+
+/* ========================================================================== */
 /* ===============================HEADER PAGE================================ */
 /* ========================================================================== */
 
@@ -96,6 +184,16 @@ header a:hover {
 .pokemon {
   text-align: center;
   color: var(--white-color);
+}
+
+h2,
+h3 {
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+
+main h2 {
+    margin-bottom: 1rem;
 }
 
 .pokemon>h2,

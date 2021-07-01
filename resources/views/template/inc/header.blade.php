@@ -17,7 +17,7 @@
       <h1>Pokédex</h1>
       <nav>
         <ul>
-          <li><a href="/">Liste</a></li>
+          <li><a href="{{ @route('home') }}">Liste</a></li>
           <li><a href="/types">Types</a></li>
         </ul>
       </nav>

@@ -14,7 +14,7 @@
   <section class="wrapper">
 
     <header>
-      <h1>Pokédex</h1>
+      <h1><a href="{{ @route('home') }}">Pokédex</a></h1>
       <nav>
         <ul>
           <li><a href="{{ @route('home') }}">Liste</a></li>

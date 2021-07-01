@@ -10,11 +10,11 @@
     </aside>
     <article>
       <h3>#{{ $pokemonId }} {{ $pokemonName[0]->name }}</h3>
-      <!-- TYPES DU POKEMON -->
 
+      <!-- TYPES DU POKEMON -->
       @foreach($pokemonTypes as $typeKey => $pokemonType)
       <div class="pokemonType">
-        <a href="{{ @route("type", ["id" => $pokemonTypeId[$typeKey] ]) }}">
+        <a href="{{ @route("type-pokemons-list", ["id" => $pokemonTypeId[$typeKey] ]) }}">
             <p><span class="{{ $pokemonType->type->name }}">{{ $pokemonType->type->name }}</span></p>
         </a>
       </div>

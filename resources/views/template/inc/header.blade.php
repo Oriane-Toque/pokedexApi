@@ -18,7 +18,7 @@
       <nav>
         <ul>
           <li><a href="{{ @route('home') }}">Liste</a></li>
-          <li><a href="/types">Types</a></li>
+          <li><a href="{{ @route('type') }}">Types</a></li>
         </ul>
       </nav>
     </header>

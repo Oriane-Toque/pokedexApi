@@ -30,3 +30,12 @@ $router->get(
         'as' => 'pokemon'
     ]
 );
+
+//**? ROUTE TYPE POKEMON LIST (liste les types de pokémons) ?**/
+$router->get(
+    '/type',
+    [
+        'uses' => 'TypeController@typePokemonList',
+        'as' => 'type'
+    ]
+);

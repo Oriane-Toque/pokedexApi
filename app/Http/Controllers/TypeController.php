@@ -49,16 +49,22 @@ class TypeController extends Controller
 
     //! récupération des images pour chaque pokemon
     //! même principe que pour la récupération de l'id de chaque type dans la page pokemon
+    //? je boucle sur ma liste de pokemons par type
     foreach ($pokemonsList as $pokemon) {
       // dd($pokemon->pokemon->name);
+      //? je boucle sur la liste de tous les pokemons
       foreach ($pokemonsListCompare as $pokemonIdCompare => $pokemonCompare) {
         // dd($pokemonCompare->name);
+        //? je compare les deux listes: si il y a une correspondance
         if ($pokemon->pokemon->name == $pokemonCompare->name) {
+          //? alors j'incrémente de 1 l'id (un tableau commence à 0, nous on a besoin qu'il commence à 1)
           $pokemonIdCompare = $pokemonIdCompare + 1;
 
           // et on récupère au passage l'id des pokemons
+          //? je stocke l'id du pokemon pour pouvoir l'indiquer dans ma vue
           array_push($pokemonListId, $pokemonIdCompare);
 
+          //? je stocke l'image du pokemon correspondant à l'id
           if ($pokemonIdCompare < 10) {
 
             array_push($pokemonSprite, 'https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/00' . $pokemonIdCompare . '.png');

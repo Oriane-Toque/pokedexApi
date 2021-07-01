@@ -12,9 +12,16 @@ class PokemonController extends Controller {
         $pokemon = Http::get('https://pokeapi.co/api/v2/pokemon/'.$id);
         $pokemon = json_decode($pokemon);
 
+        if($id <= 9) {
+          $pokemonSprite = 'https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/00'.$id.'.png';
+        } elseif ($id < 100) {
+            $pokemonSprite = 'https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/0'.$id.'.png';
+        } else {
+            $pokemonSprite = 'https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/'.$id.'.png';
+        }
+
         $pokemonId = $id;
         $pokemonName = $pokemon->forms;
-        $pokemonSprite = $pokemon->sprites->front_default;
         $pokemonStats = $pokemon->stats;
         $pokemonTypes = $pokemon->types;
 

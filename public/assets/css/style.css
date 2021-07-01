@@ -186,14 +186,11 @@ header a:hover {
   color: var(--white-color);
 }
 
+a p,
 h2,
 h3 {
     text-transform: capitalize;
     color: var(--white-color);
-}
-
-main h2 {
-    margin-bottom: 1rem;
 }
 
 .pokemon>h2,

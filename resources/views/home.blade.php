@@ -2,8 +2,6 @@
 
 @section('content')
 
-  <h2>Liste de tous les pokemons</h2>
-
   <section class="pokemonList">
 
     @foreach($pokemonList as $pokemonId => $pokemonItem)

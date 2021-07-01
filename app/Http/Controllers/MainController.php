@@ -29,6 +29,7 @@ class MainController extends Controller
     return view(
       'home',
       [
+        'title' => 'Home',
         'pokemonList' => $pokemonList->results,
         'pokemonSprite' => $pokemonSprite
       ]

@@ -26,6 +26,7 @@ class PokemonController extends Controller {
         $pokemonTypes = $pokemon->types;
 
         return view('pokemon', [
+            'title' => $pokemonName[0]->name,
             'pokemonId' => $pokemonId,
             'pokemonName' => $pokemonName,
             'pokemonSprite' => $pokemonSprite,

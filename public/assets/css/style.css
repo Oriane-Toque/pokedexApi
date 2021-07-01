@@ -243,9 +243,14 @@ h3 {
   margin: 0 5px 20px 5px;
 }
 
-.pokemonType>p span {
+.pokemonType p span {
   padding: 6px 6px;
   border-radius: 0.2rem;
+}
+
+.pokemonType>a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .pokemonDescription>article .pokemonStats>div {

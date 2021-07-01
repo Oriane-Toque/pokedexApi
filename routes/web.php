@@ -45,6 +45,6 @@ $router->get(
     '/type/{id}',
     [
         'uses' => 'TypeController@typePokemonList',
-        'as' => 'typepokemonslist'
+        'as' => 'type-pokemons-list'
     ]
 );

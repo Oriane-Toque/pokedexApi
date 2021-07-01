@@ -1,6 +1,5 @@
 @extends('template.master')
 
-
 @section('content')
 
 <section class="pokemon">

@@ -1,7 +1,5 @@
 @extends('template.master')
 
-@dump($typeList)
-
 @section('content')
 
 <section class="listTypes">
